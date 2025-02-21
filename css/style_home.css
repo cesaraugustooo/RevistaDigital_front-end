@@ -14,9 +14,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10%;
+    height: 13%;
     width: 100%;
-    background: linear-gradient(#89caff, #89caff, #89caff, #89caff);
+    background-color: #a4d7ef;
     z-index: 1000;
 }
 
@@ -37,7 +37,7 @@ header {
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: end;
 }
 .nav-2 img{
@@ -111,4 +111,18 @@ header {
     .materias {
         max-width: 600px;
     }
+}
+#home-box{
+    position: relative;
+    right: 50px;
+}
+#home-box:hover{
+    border-bottom: 3px solid black;
+}
+#histori-box{
+    position: relative;
+    left: 50px;
+}
+#histori-box:hover{
+    border-bottom: 3px solid black;
 }

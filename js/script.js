@@ -1,7 +1,9 @@
 
+const BACKEND = 'http://localhost:8000'
+
 async function getMateria(){
     try{
-        const api = await fetch('http://localhost:8000/posts');
+        const api = await fetch(`${BACKEND}/posts`);
         const data = await api.json();
         console.log(data)
     }
@@ -11,7 +13,7 @@ async function getMateria(){
 }
 async function inerMateria(){
     try {
-        const api = await fetch('http://localhost:8000/posts');
+        const api = await fetch(`${BACKEND}/posts`);
     
         const data = await api.json();
     
