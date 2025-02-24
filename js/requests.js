@@ -97,7 +97,7 @@ async function postMateria(){
 
 
 
-async function postMateria(){
+async function postUsers(){
     const user_usuario = document.getElementById('user_usuario').value;
     const senha_usuario = document.getElementById('senha_usuario').value;
     const nivel = document.getElementById('nivel').value;
@@ -112,7 +112,7 @@ async function postMateria(){
     }
 
         try {
-            const response = await fetch('http://localhost/RevistaDigital_API/posts', {
+            const response = await fetch('http://localhost/RevistaDigital_API/users', {
                 method: 'POST',
                 headers:{'Content-Type': 'application/json',},
                 body: JSON.stringify(dados)
