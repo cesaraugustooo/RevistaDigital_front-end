@@ -126,3 +126,51 @@ header {
 #histori-box:hover{
     border-bottom: 3px solid black;
 }
+#exatas-box:hover{
+    border-bottom: 3px solid black;
+}
+#exatas-box{
+    position: relative;
+    left:100px;
+}
+#lin-box{
+    position:relative;right:100px;
+}
+#lin-box:hover{
+    border-bottom: 3px solid black;
+}
+.link-materias{
+    margin-top: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+}
+.card-hoover:hover{
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+}
+.prox-animation{
+    transform: translateX(200px);
+    transition: ease-in-out;
+}
+#img{
+    transition: 2s ease-in-out;
+}
+.title-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 71%;
+    margin: 3% auto;
+}
+.hr{
+    background-color:  #A4D7EF;;
+    width: 70%;
+    position: relative;
+    right: 1%;
+    height: 10px;
+    margin: 10px;
+}
