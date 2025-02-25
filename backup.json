@@ -1,0 +1,69 @@
+[
+    {
+        "id_post": 3,
+        "titulo_post": "Inflação Cai e Mercado Prevê Redução dos Juros Ainda Este Ano",
+        "foto_post": "file:///C:/Users/CLIENTE/Documents/RevistaDigital_front-end-main/serverImages/economia.jpg",
+        "descricao_post": "A economia brasileira começa a dar sinais de alívio com a desaceleração da inflação registrada nos últimos meses. Dados divulgados pelo Instituto Brasileiro de Geografia e Estatística (IBGE) indicam que o Índice de Preços ao Consumidor Amplo (IPCA), principal indicador da inflação no país, registrou uma variação abaixo das expectativas do mercado, reforçando as apostas de que o Banco Central poderá reduzir a taxa básica de juros (Selic) ainda este ano.",
+        "data_criacao_post": "2025-02-24 00:00:00",
+        "usuarios_id_usuario": 1,
+        "categorias_id_categoria": 1
+    },
+    {
+        "id_post": 5,
+        "titulo_post": "Inflação Cai e Mercado Prevê Redução dos Juros Ainda Este Ano",
+        "foto_post": "file:///C:/Users/CLIENTE/Documents/RevistaDigital_front-end-main/serverImages/economia.jpg",
+        "descricao_post": "A economia brasileira começa a dar sinais de alívio com a desaceleração da inflação registrada nos últimos meses. Dados divulgados pelo Instituto Brasileiro de Geografia e Estatística (IBGE) indicam que o Índice de Preços ao Consumidor Amplo (IPCA), principal indicador da inflação no país, registrou uma variação abaixo das expectativas do mercado, reforçando as apostas de que o Banco Central poderá reduzir a taxa básica de juros (Selic) ainda este ano.",
+        "data_criacao_post": "2025-02-24 00:00:00",
+        "usuarios_id_usuario": 1,
+        "categorias_id_categoria": 1
+    },
+    {
+        "id_post": 6,
+        "titulo_post": "Inflação Cai e Mercado Prevê Redução dos Juros Ainda Este Ano",
+        "foto_post": "file:///C:/Users/CLIENTE/Documents/RevistaDigital_front-end-main/serverImages/economia.jpg",
+        "descricao_post": "A economia brasileira começa a dar sinais de alívio com a desaceleração da inflação registrada nos últimos meses. Dados divulgados pelo Instituto Brasileiro de Geografia e Estatística (IBGE) indicam que o Índice de Preços ao Consumidor Amplo (IPCA), principal indicador da inflação no país, registrou uma variação abaixo das expectativas do mercado, reforçando as apostas de que o Banco Central poderá reduzir a taxa básica de juros (Selic) ainda este ano.",
+        "data_criacao_post": "2025-02-24 00:00:00",
+        "usuarios_id_usuario": 1,
+        "categorias_id_categoria": 1
+    },
+    {
+        "id_post": 7,
+        "titulo_post": "Inflação Cai e Mercado Prevê Redução dos Juros Ainda Este Ano",
+        "foto_post": "file:///C:/Users/CLIENTE/Documents/RevistaDigital_front-end-main/serverImages/economia.jpg",
+        "descricao_post": "A economia brasileira começa a dar sinais de alívio com a desaceleração da inflação registrada nos últimos meses. Dados divulgados pelo Instituto Brasileiro de Geografia e Estatística (IBGE) indicam que o Índice de Preços ao Consumidor Amplo (IPCA), principal indicador da inflação no país, registrou uma variação abaixo das expectativas do mercado, reforçando as apostas de que o Banco Central poderá reduzir a taxa básica de juros (Selic) ainda este ano.",
+        "data_criacao_post": "2025-02-24 00:00:00",
+        "usuarios_id_usuario": 1,
+        "categorias_id_categoria": 1
+    },
+    {
+        "id_usuario": 1,
+        "user_usuario": "User 9324",
+        "senha_usuario": "12345678",
+        "nivel": "Admin"
+    },
+    {
+        "id_usuario": 2,
+        "user_usuario": "User 9",
+        "senha_usuario": "12345678",
+        "nivel": "Admin"
+    },
+    {
+        "id_usuario": 3,
+        "user_usuario": "User 9",
+        "senha_usuario": "12345678",
+        "nivel": "Admin"
+    },
+    {
+        "id_usuario": 4,
+        "user_usuario": "user teste",
+        "senha_usuario": "dffdaf",
+        "nivel": "Admin"
+    },
+    {
+        "id_categoria": 1,
+        "nome_categoria": "Categoria atualizada",
+        "descricao_categoria": null
+    }
+    
+    
+]
