@@ -1,8 +1,9 @@
 [
+    
     {
         "id_post": 3,
         "titulo_post": "Inflação Cai e Mercado Prevê Redução dos Juros Ainda Este Ano",
-        "foto_post": "file:///C:/Users/CLIENTE/Documents/RevistaDigital_front-end-main/serverImages/economia.jpg",
+        "foto_post": "../serverImages/economia.jpg",
         "descricao_post": "A economia brasileira começa a dar sinais de alívio com a desaceleração da inflação registrada nos últimos meses. Dados divulgados pelo Instituto Brasileiro de Geografia e Estatística (IBGE) indicam que o Índice de Preços ao Consumidor Amplo (IPCA), principal indicador da inflação no país, registrou uma variação abaixo das expectativas do mercado, reforçando as apostas de que o Banco Central poderá reduzir a taxa básica de juros (Selic) ainda este ano.",
         "data_criacao_post": "2025-02-24 00:00:00",
         "usuarios_id_usuario": 1,
@@ -11,7 +12,7 @@
     {
         "id_post": 5,
         "titulo_post": "Inflação Cai e Mercado Prevê Redução dos Juros Ainda Este Ano",
-        "foto_post": "file:///C:/Users/CLIENTE/Documents/RevistaDigital_front-end-main/serverImages/economia.jpg",
+        "foto_post": "../serverImages/economia.jpg",
         "descricao_post": "A economia brasileira começa a dar sinais de alívio com a desaceleração da inflação registrada nos últimos meses. Dados divulgados pelo Instituto Brasileiro de Geografia e Estatística (IBGE) indicam que o Índice de Preços ao Consumidor Amplo (IPCA), principal indicador da inflação no país, registrou uma variação abaixo das expectativas do mercado, reforçando as apostas de que o Banco Central poderá reduzir a taxa básica de juros (Selic) ainda este ano.",
         "data_criacao_post": "2025-02-24 00:00:00",
         "usuarios_id_usuario": 1,
@@ -20,7 +21,7 @@
     {
         "id_post": 6,
         "titulo_post": "Inflação Cai e Mercado Prevê Redução dos Juros Ainda Este Ano",
-        "foto_post": "file:///C:/Users/CLIENTE/Documents/RevistaDigital_front-end-main/serverImages/economia.jpg",
+        "foto_post": "../serverImages/economia.jpg",
         "descricao_post": "A economia brasileira começa a dar sinais de alívio com a desaceleração da inflação registrada nos últimos meses. Dados divulgados pelo Instituto Brasileiro de Geografia e Estatística (IBGE) indicam que o Índice de Preços ao Consumidor Amplo (IPCA), principal indicador da inflação no país, registrou uma variação abaixo das expectativas do mercado, reforçando as apostas de que o Banco Central poderá reduzir a taxa básica de juros (Selic) ainda este ano.",
         "data_criacao_post": "2025-02-24 00:00:00",
         "usuarios_id_usuario": 1,
@@ -29,7 +30,7 @@
     {
         "id_post": 7,
         "titulo_post": "Inflação Cai e Mercado Prevê Redução dos Juros Ainda Este Ano",
-        "foto_post": "file:///C:/Users/CLIENTE/Documents/RevistaDigital_front-end-main/serverImages/economia.jpg",
+        "foto_post": "../serverImages/economia.jpg",
         "descricao_post": "A economia brasileira começa a dar sinais de alívio com a desaceleração da inflação registrada nos últimos meses. Dados divulgados pelo Instituto Brasileiro de Geografia e Estatística (IBGE) indicam que o Índice de Preços ao Consumidor Amplo (IPCA), principal indicador da inflação no país, registrou uma variação abaixo das expectativas do mercado, reforçando as apostas de que o Banco Central poderá reduzir a taxa básica de juros (Selic) ainda este ano.",
         "data_criacao_post": "2025-02-24 00:00:00",
         "usuarios_id_usuario": 1,
