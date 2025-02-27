@@ -5,8 +5,22 @@ async function postMateria(){
     const descricao_post = document.getElementById('descricao_post').value;
     const data_criacao_post = document.getElementById('data_criacao_post').value;
     const usuarios_id_usuario = document.getElementById('usuarios_id_usuario').value;
-    const categorias_id_categoria = document.getElementById('categorias_id_categoria').value;
+    var categorias_id_categoria = document.getElementById('categorias_id_categoria').value;
 
+    switch(categorias_id_categoria){
+        case 'Humanas':
+            categorias_id_categoria = 1
+            break;
+        case 'Exatas':
+            categorias_id_categoria = 3
+            break;
+        case 'Linguagens':
+            categorias_id_categoria = 2
+            break;
+        case 'Ciencias' :
+            categorias_id_categoria =4
+            break;
+    }
 
     const dados ={
         titulo_post: titulo_post,
@@ -20,11 +34,13 @@ async function postMateria(){
         try {
             const response = await fetch('http://localhost/RevistaDigital_API/posts', {
                 method: 'POST',
-                headers:{'Content-Type': 'application/json',},
+                headers: {
+                    'Content-Type': 'application/json',
+                },
                 body: JSON.stringify(dados)
-        });
+            });
 
-            document.getElementById('status_categoria').innerHTML = `<div class="alert alert-success">Categoria criada com sucesso!</div>`;
+           
             document.getElementById('form-categoria').reset(); // Limpa o formulário
         } catch (error) {
             document.getElementById('status_categoria').innerHTML = `<div class="alert alert-danger">Erro ao criar categoria: ${error.message}</div>`;
@@ -54,7 +70,6 @@ async function postUsers(){
                 body: JSON.stringify(dados)
         });
 
-            document.getElementById('status_categoria').innerHTML = `<div class="alert alert-success">Categoria criada com sucesso!</div>`;
             document.getElementById('form-categoria').reset(); // Limpa o formulário
         } catch (error) {
             // Exibe mensagem de erro

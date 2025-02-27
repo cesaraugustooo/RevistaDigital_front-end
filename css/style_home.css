@@ -16,6 +16,7 @@ header {
     justify-content: center;
     height: 13%;
     width: 100%;
+    margin-bottom: 200px;
     background-color: #a4d7ef;
     z-index: 1000;
 }
@@ -129,6 +130,14 @@ header {
 #exatas-box:hover{
     border-bottom: 3px solid black;
 }
+#add-box{
+    position: relative;
+    right: 10%;
+}
+#add-box:hover{
+    border-bottom: 3px solid black;
+
+}
 #exatas-box{
     position: relative;
     left:100px;
@@ -173,4 +182,9 @@ header {
     right: 1%;
     height: 10px;
     margin: 10px;
+}
+.posts{
+    width: 30%;
+    height: auto;
+    margin: auto;
 }
