@@ -107,7 +107,6 @@ header {
     margin-top: 10px;
 }
 
-/* Responsividade */
 @media (min-width: 768px) {
     .materias {
         max-width: 600px;

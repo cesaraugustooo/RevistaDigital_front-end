@@ -1,3 +1,4 @@
+const BACKEND2 = 'http://localhost/RevistaDigital_API'
 
 async function postMateria(){
     const titulo_post = document.getElementById('titulo_post').value;
@@ -28,11 +29,12 @@ async function postMateria(){
         descricao_post: descricao_post,
         data_criacao_post: data_criacao_post,
         usuarios_id_usuario: usuarios_id_usuario,
-        categorias_id_categoria: categorias_id_categoria
+        categorias_id_categoria: categorias_id_categoria,
+        status_post: 0
     }
 
         try {
-            const response = await fetch('http://localhost/RevistaDigital_API/posts', {
+            const response = await fetch(`${BACKEND2}/posts`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -76,4 +78,3 @@ async function postUsers(){
             document.getElementById('status_categoria').innerHTML = `<div class="alert alert-danger">Erro ao criar categoria: ${error.message}</div>`;
         }
 }
-
