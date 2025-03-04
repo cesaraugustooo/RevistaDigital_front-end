@@ -62,14 +62,14 @@
     <div style="margin-top: 100px !important;" class="container mt-5">
         <h1>Criar Nova Materia</h1>
 
-        <form id="form-categoria" method="post">
+        <form id="form-categoria" method="post" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="titulo_post" class="form-label">Titulo</label>
                 <input type="text" class="form-control" id="titulo_post" name="titulo_post" required>
             </div>
             <div class="mb-3">
                 <label for="foto_post" class="form-label">Foto</label>
-                <input type="text" class="form-control" id="foto_post" name="foto_post"  required>
+                <input type="file" class="form-control" id="foto_post" name="foto_post"  required>
             </div>
             <div class="mb-3">
                 <label for="descricao_post" class="form-label">Conteudo</label>
@@ -96,10 +96,14 @@
                     $conn = new PDO('mysql:host=localhost;dbname=blog', 'root', '');
 
                     $date_time = date('Y-m-d H:i:s');
+                    $diretorio = '../serverImages/';
+                    $file = basename($_FILES['foto_post']['name']);
+                    
+                    move_uploaded_file($_FILES['foto_post']['tmp_name'],$diretorio.$file);
 
                     $stmt = $conn->prepare('INSERT INTO posts VALUES(null,:titulo,:foto,:descricao,:data,:usuario,:categoria,:status)');
                     $stmt->bindValue(':titulo',$_POST['titulo_post']);
-                    $stmt->bindValue(':foto',$_POST['foto_post']);
+                    $stmt->bindValue(':foto',$diretorio.$file);
                     $stmt->bindValue(':descricao',$_POST['descricao_post']);
                     $stmt->bindValue(':data',$date_time);
                     $stmt->bindValue(':usuario',$_POST['usuarios_id_usuario']);
