@@ -1,27 +1,14 @@
 const BACKEND2 = 'http://localhost/RevistaDigital_API'
 
 async function postMateria(){
+    event.preventDefault(); 
     const titulo_post = document.getElementById('titulo_post').value;
     const foto_post = document.getElementById('foto_post').value;
     const descricao_post = document.getElementById('descricao_post').value;
     const data_criacao_post = document.getElementById('data_criacao_post').value;
     const usuarios_id_usuario = document.getElementById('usuarios_id_usuario').value;
-    var categorias_id_categoria = document.getElementById('categorias_id_categoria').value;
-
-    switch(categorias_id_categoria){
-        case 'Humanas':
-            categorias_id_categoria = 1
-            break;
-        case 'Exatas':
-            categorias_id_categoria = 3
-            break;
-        case 'Linguagens':
-            categorias_id_categoria = 2
-            break;
-        case 'Ciencias' :
-            categorias_id_categoria =4
-            break;
-    }
+    var categoriasInput = document.getElementById('categorias_id_categoria').value;
+    const categorias_id_categoria = parseInt(categoriasInput)
 
     const dados ={
         titulo_post: titulo_post,
@@ -42,8 +29,10 @@ async function postMateria(){
                 body: JSON.stringify(dados)
             });
 
+            if(response.ok){
+                document.getElementById('status_categoria').innerHTML = `<div class="alert alert-success>Materia criada com sucesso!!!</div>`
+            }
            
-            document.getElementById('form-categoria').reset(); // Limpa o formulário
         } catch (error) {
             document.getElementById('status_categoria').innerHTML = `<div class="alert alert-danger">Erro ao criar categoria: ${error.message}</div>`;
         }

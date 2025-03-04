@@ -42,6 +42,7 @@ async function inerDestaques(){
 inerDestaques();
 
 async function innerMaterias(area){
+  const start = performance.now();
 
     try{
     
@@ -63,12 +64,15 @@ async function innerMaterias(area){
         </div>
       </div>
         `
+    const end = performance.now();
+    console.log(`Tempo da requisição: ${(end - start).toFixed(2)}ms`);
     })}catch(error){
         console.error('Erro ao inserir materias', error);
    }
 }
 
 async function updateStatus(id){
+  const start = performance.now();
   try{
     const dados = {
       status_post: 1
@@ -81,13 +85,15 @@ async function updateStatus(id){
       },
       body: JSON.stringify(dados),
   });
-     
+  const end = performance.now();
+  console.log(`Tempo da requisição: ${(end - start).toFixed(2)}ms`);
   } catch (error) {
       console.error(error)
   }
   
 }
 async function innerStatusPost(){
+  const start = performance.now();
   try{
     const api = await fetch(`${BACKEND}/posts/null`);
 
@@ -111,6 +117,8 @@ async function innerStatusPost(){
     </div>
       `
   });
+  const end = performance.now();
+  console.log(`Tempo da requisição: ${(end - start).toFixed(2)}ms`);
   }catch(error){
     console.error('Erro ao inserir status de cards', error)
   }
