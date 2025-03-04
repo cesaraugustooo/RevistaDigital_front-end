@@ -37,33 +37,3 @@ async function postMateria(){
             document.getElementById('status_categoria').innerHTML = `<div class="alert alert-danger">Erro ao criar categoria: ${error.message}</div>`;
         }
 }
-
-
-
-async function postUsers(){
-    const user_usuario = document.getElementById('user_usuario').value;
-    const senha_usuario = document.getElementById('senha_usuario').value;
-    const nivel = document.getElementById('nivel').value;
-
-
-
-    const dados ={
-        user_usuario: user_usuario,
-        senha_usuario: senha_usuario,
-        nivel: nivel,
-       
-    }
-
-        try {
-            const response = await fetch('http://localhost/RevistaDigital_API/users', {
-                method: 'POST',
-                headers:{'Content-Type': 'application/json',},
-                body: JSON.stringify(dados)
-        });
-
-            document.getElementById('form-categoria').reset(); // Limpa o formulário
-        } catch (error) {
-            // Exibe mensagem de erro
-            document.getElementById('status_categoria').innerHTML = `<div class="alert alert-danger">Erro ao criar categoria: ${error.message}</div>`;
-        }
-}

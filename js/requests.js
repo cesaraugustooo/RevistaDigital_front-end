@@ -70,6 +70,17 @@ async function innerMaterias(area){
         console.error('Erro ao inserir materias', error);
    }
 }
+async function deletePost(id){
+  try{
+      const response = await fetch(`${BACKEND}/posts/${id}`,{
+          method: 'DELETE',
+          headers: {'Content-Type':'application/json'},
+      });
+      
+  }catch(error){
+      console.erro('Erro ao deletar post', error)
+  }
+}
 
 async function updateStatus(id){
   const start = performance.now();
@@ -110,7 +121,7 @@ async function innerStatusPost(){
         <p class="card-text">${post.descricao_post}</p>
         <p class="card-text"><small class="text-body-secondary">Postado em ${post.data_criacao_post}</small></p>
         <a href="../painel_de_controle/fluxo.html" class="btn btn-success" onclick="updateStatus(${post.id_post})">Aceitar</a>
-        <a href="#" class="btn btn-danger">Recusar</a>
+        <a class="btn btn-danger" onclick="deletePost(${post.id_post})">Recusar</a>
 
 
       </div>
